@@ -9,7 +9,7 @@ import Test from './pages/Test';
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{ position: 'absolute' }}>
         <Link to='/test'>👉 Test page</Link>
       </div>
       <Switch>

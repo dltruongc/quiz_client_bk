@@ -1,0 +1,16 @@
+.sidebar-item {
+  display: flex;
+  transition: background-color 0.2s;
+  padding: 10px 20px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: rgba(60, 60, 60, 1);
+  }
+
+  &__title {
+    margin-left: 8px;
+  }
+}

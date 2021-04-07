@@ -18,5 +18,6 @@ module.exports = {
     'no-var': 'error',
     eqeqeq: 'error',
     'no-unused-vars': 'warn',
+    'react/prop-types': 0,
   },
 };

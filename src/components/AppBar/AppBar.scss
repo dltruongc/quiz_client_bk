@@ -2,8 +2,7 @@
   position: fixed;
   width: 100vw;
   height: 40px;
-  background-color: rgb(12, 12, 12);
-  box-shadow: 0 0 1px rgb(12, 12, 12);
+  background-color: #21222b;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -16,7 +15,7 @@
 
     &__item {
       text-decoration: none;
-      color: rgb(201, 201, 201);
+      color: #bcbcbf;
       margin-left: 8px;
       margin-right: 8px;
       display: flex;
@@ -42,11 +41,20 @@
       margin-left: 8px;
       margin-right: 8px;
       text-decoration: none;
-      color: rgb(201, 201, 201);
+      color: #bcbcbf;
 
       :first-child {
         margin-right: 4px;
       }
     }
   }
+}
+.app-bar_hr {
+  background-color: black;
+  border: none;
+  height: 1px;
+  width: 100vw;
+  top: 40px;
+  position: fixed;
+  z-index: 1000;
 }
