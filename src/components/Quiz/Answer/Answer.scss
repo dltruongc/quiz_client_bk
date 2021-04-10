@@ -1,0 +1,15 @@
+.answer {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin-left: 10px;
+  background-color: #21222b;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 4px;
+  // width: calc(100% - 20px);
+
+  :first-child {
+    margin-right: 10px;
+  }
+}

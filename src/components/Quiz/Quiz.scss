@@ -3,6 +3,17 @@
   background-color: #21222b;
   color: white;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 8px 0;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+
+  :first-child {
+    margin-right: 16px;
+  }
+
+  &__question {
+    font-size: 16px;
+  }
 }
