@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Quiz from '../../Quiz';
 import './BodyContent.scss';
+import rawData from './raw_data';
 
 export default function BodyContent(params) {
+  const [quizzes, setQuizzes] = useState([]);
+
+  useEffect(() => {
+    setTimeout(setQuizzes(rawData), 2000);
+  }, [quizzes]);
+
   const listItems = () => {
-    return new Array(500).fill('').map((e, i) => {
-      return (
-        <p style={{ border: '1px solid orange' }} key={i}>
-          Lorem_{i + 1}
-        </p>
-      );
+    return quizzes.map((quiz, i) => {
+      return <Quiz key={i} quiz={quiz} />;
     });
   };
 
