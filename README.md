@@ -68,3 +68,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+1)bố cục
+appboard:
+	-ghi thông tin user
+top nav bar:
+	-chứ link điều hướng
+side bar:
+	-leftsidebar
+	-rightsidebar
+	-drawer(coolapse/expanse)
+mainHeader:
+	-ảnh(image carousel)
+	
+3 cột:
+	-Làm Bài Test,upload bài test
+
+
+2) component chính
+	list,listTitle,
+	-Button(Primary Button,Ghost Button,Secondary Button)
+	-dropdown
+	-comboBox
+	
+教學系統
+
+navigationBar
+	-navigation Item
+	-listView
+sideBarItem:
+
+Theme:
+	-contextProvider(quản lý state global)
+
+quizze:
+	-	
