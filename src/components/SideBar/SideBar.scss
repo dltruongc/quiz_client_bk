@@ -1,20 +1,18 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 20%;
-  height: calc(100%);
-  position: fixed;
-  margin-top: 40px;
-  overflow-y: visible;
+  height: 94vh;
+  overflow-y: auto;
   min-width: 230px;
-  padding: 20px 0;
   background-color: #21222b;
   color: white;
+  flex-basis: 20%;
 
   &__title {
     font-weight: bold;
     color: rgb(189, 189, 189);
     font-size: 14px;
+    margin-top: 20px;
     margin-bottom: 12px;
     margin-left: 20px;
   }

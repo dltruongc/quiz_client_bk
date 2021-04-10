@@ -42,7 +42,6 @@ export default function AppBar() {
           </a>
         </div>
       </div>
-      <hr className='app-bar_hr' />
     </>
   );
 }

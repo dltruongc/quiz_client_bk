@@ -1,12 +1,13 @@
 .app-bar {
-  position: fixed;
+  position: sticky;
   width: 100vw;
-  height: 40px;
+  height: 6vh;
   background-color: #21222b;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
 
   &__left {
     display: flex;
@@ -48,13 +49,4 @@
       }
     }
   }
-}
-.app-bar_hr {
-  background-color: black;
-  border: none;
-  height: 1px;
-  width: 100vw;
-  top: 40px;
-  position: fixed;
-  z-index: 1000;
 }
