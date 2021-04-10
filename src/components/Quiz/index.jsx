@@ -7,7 +7,14 @@ import './Quiz.scss';
 export default function Quiz({ quiz, key }) {
   const renderAnswers = () => {
     return quiz.answers.map((answer) => {
-      return <Answer value={answer.name} key={answer._id} />;
+      return (
+        <Answer
+          multi={quiz.isMultipleChoice || false}
+          quizId={quiz._id}
+          name={answer.name}
+          key={answer._id}
+        />
+      );
     });
   };
 

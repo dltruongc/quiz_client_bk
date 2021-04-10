@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Quiz from '../../Quiz';
-import './BodyContent.scss';
-import rawData from './raw_data';
+import React, { useEffect, useState } from "react";
+import Quiz from "../../Quiz";
+import "./BodyContent.scss";
+import rawData from "./raw_data";
 
 export default function BodyContent(params) {
   const [quizzes, setQuizzes] = useState([]);

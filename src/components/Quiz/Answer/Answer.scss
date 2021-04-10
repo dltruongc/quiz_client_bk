@@ -2,14 +2,69 @@
   display: flex;
   align-items: center;
   min-height: 40px;
-  margin-left: 10px;
   background-color: #21222b;
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 4px;
-  // width: calc(100% - 20px);
+  margin-left: 40px;
+  margin-right: 20px;
+  cursor: pointer;
 
-  :first-child {
-    margin-right: 10px;
+  &__content {
+    margin-left: 10px;
+    user-select: none;
+  }
+
+  & input[type='radio'] {
+    appearance: none;
+  }
+
+  & input[type='radio'] + &__icon {
+    border: 2px solid #fc77a1;
+    border-radius: 10px;
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  & input[type='radio'] + &__icon::before {
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    height: 16px;
+    width: 16px;
+    content: '';
+  }
+
+  & input[type='radio']:checked + &__icon::after {
+    content: '';
+    height: 16px;
+    width: 16px;
+    border-radius: 6.667px;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: #fc77a1;
+  }
+
+  & input[type='checkbox'] {
+    appearance: none;
+  }
+
+  & input[type='checkbox'] + &__icon {
+    border: 2px solid #fc77a1;
+    background-color: transparent;
+    color: transparent;
+    height: 24px;
+    width: 24px;
+    border-radius: 10px;
+  }
+
+  & input[type='checkbox']:checked + &__icon {
+    color: black;
+    background-color: #fc77a1;
   }
 }

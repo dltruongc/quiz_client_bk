@@ -28,7 +28,7 @@ export default [
     __v: 0,
   },
   {
-    isMultipleChoice: false,
+    isMultipleChoice: true,
     _id: '6071645f3d805e0030903144',
     answers: [
       {
