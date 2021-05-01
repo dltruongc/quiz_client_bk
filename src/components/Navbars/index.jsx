@@ -1,20 +1,17 @@
 import React from "react";
-import { MdDone } from "react-icons/md";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import FormControl from "react-bootstrap/FormControl";
 import Nav from "react-bootstrap/Nav";
+import "./Navbars.scss";
 
-
-
-import "./NavBar.scss";
-
-export default function NavBar({ value, id }) {
+// eslint-disable-next-line no-empty-pattern
+export default function NavBar({  }) {
   return (
     <Navbar bg='light' expand='lg'>
-      <Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href='#home'>React-Bootstrap </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>

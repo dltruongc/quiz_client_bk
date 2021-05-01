@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import React from 'react';
 
 import './App.scss';
-
 import Home from './pages/Home';
 import Test from './pages/Test';
 

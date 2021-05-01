@@ -3,7 +3,7 @@ import Quiz from "../../Quiz";
 import "./BodyContent.scss";
 import rawData from "./raw_data";
 
-export default function BodyContent(params) {
+export default function BodyContent() {
   const [quizzes, setQuizzes] = useState([]);
 
   useEffect(() => {
@@ -12,7 +12,9 @@ export default function BodyContent(params) {
 
   const listItems = () => {
     return quizzes.map((quiz, i) => {
-      return <Quiz key={i} quiz={quiz} />;
+      return (
+        <Quiz key={i} quiz={quiz} />
+      );
     });
   };
 
