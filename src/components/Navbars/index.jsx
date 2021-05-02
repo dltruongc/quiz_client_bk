@@ -1,22 +1,22 @@
+/* eslint-disable no-empty-pattern */
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import FormControl from "react-bootstrap/FormControl";
-import Nav from "react-bootstrap/Nav";
-import "./Navbars.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-// eslint-disable-next-line no-empty-pattern
-export default function NavBar({  }) {
+export default function NavBar() {
   return (
     <Navbar bg='light' expand='lg'>
-      <Navbar.Brand href='#home'>React-Bootstrap </Navbar.Brand>
+      <Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
-          <Nav.Link href='#home'>Home</Nav.Link>
-          <Nav.Link href='#link'>Link</Nav.Link>
+          <Nav.Link href='#home'>Home🏘</Nav.Link>
+          <Nav.Link href='/test'>Test</Nav.Link>
           <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
             <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
             <NavDropdown.Item href='#action/3.2'>
